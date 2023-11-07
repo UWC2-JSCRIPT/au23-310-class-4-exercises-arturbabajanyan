@@ -10,7 +10,7 @@ const suits = ['hearts', 'spades', 'clubs', 'diamonds'];
     // create an array of 13 objects
     for (let j = 1; j <= 13; j++) {
       // for each loop, push a card object to the deck
-      deck.push[{}];
+
       // special cases for when j > 10
       let displayVal = '';
 
