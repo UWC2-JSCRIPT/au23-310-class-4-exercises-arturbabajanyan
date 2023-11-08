@@ -7,7 +7,27 @@
  */
 const foodIsCooked = function(kind, internalTemp, doneness) {
   // Write function HERE
+  if (kind === "chicken") {
+    if (internalTemp > 165) {
+      return true;
+    }
+  } else if (kind === "beef") {
+    if (doneness === "rare") {
+      if (internalTemp > 125) {
+        return true;
+      }
+    } else if (doneness === "medium") {
+      if (internalTemp > 135) {           // in PDF medium tempreture shows 135, canvas class 4 homework page shows 138
+        return true;
+      }
+    } else if (doneness === "well") {
+      if (internalTemp > 155) {
+        return true;
+      }
+    }
+  }
 
+  return false;
 }
 
 
